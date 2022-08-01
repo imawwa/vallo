@@ -94,7 +94,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
-                        android:text="Controller"
                         android:textColor="#DDDBDB"
                         android:textSize="14sp" />
                 </LinearLayout>
