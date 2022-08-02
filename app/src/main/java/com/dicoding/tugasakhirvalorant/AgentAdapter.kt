@@ -32,7 +32,7 @@ class AgentAdapter(val listAgent :ArrayList<AgentData1>) : RecyclerView.Adapter<
 
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView.context,AgentDetail::class.java)
-            intent.putExtra("agentName",agent)
+            intent.putExtra(AgentDetail.INTENT_PARCEABLE, agent)
             holder.itemView.context.startActivity(intent)
         }
 
@@ -51,6 +51,9 @@ class AgentAdapter(val listAgent :ArrayList<AgentData1>) : RecyclerView.Adapter<
     class ListViewHolder(view: View): RecyclerView.ViewHolder(view) {
         var tvName : TextView = itemView.findViewById(R.id.tv_agentName)
         var imgPhoto: ImageView = itemView.findViewById(R.id.img_photo)
+
+
+
 
     }
 }

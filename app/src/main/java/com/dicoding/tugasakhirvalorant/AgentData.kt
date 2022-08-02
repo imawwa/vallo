@@ -2,7 +2,6 @@ package com.dicoding.tugasakhirvalorant
 
 import android.os.Parcel
 import android.os.Parcelable
-
 data class AgentData(
     var agentPhoto:Int = 0,
     var agentName :String = "",
@@ -12,10 +11,9 @@ data class AgentData(
     var agentNegara :String = "",
     var agentRas:String = "",
     var agentDeskripsi:String = "",
-):Parcelable{
+):Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
-
     ) {
     }
 

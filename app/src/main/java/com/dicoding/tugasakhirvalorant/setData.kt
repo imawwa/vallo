@@ -1,5 +1,7 @@
 package com.dicoding.tugasakhirvalorant
 
+
+
 object setData {
 
     val agentName = arrayOf(
@@ -72,17 +74,7 @@ object setData {
                 "Amerika Serikat",
             "Jepang",)
 
-    val agentRas = arrayOf(
-        "Radiant",
-               "Human",
-              "Human",
-         "Radiant",
-           "Human",
-               "Radiant",
-                "Human",
-             "Radiant",
-                "Human",
-            "Radiant",)
+
 
     val deskripsi = arrayOf(
         "Agen asal Ghana, Astra, memberdayakan kekuatan semesta untuk mereka ulang medan tempur sesuka hatinya. Dengan kendali penuh atas wujud astralnya dan bakat meramal strategisnya, dia akan selalu unggul dari musuuhnya.",
@@ -105,6 +97,11 @@ object setData {
                 val agent = AgentData()
                 agent.agentName= agentName[position]
                 agent.agentPhoto= agentPhoto[position]
+                agent.agentRole= agentRole[position]
+                agent.agentGender= agentRole[position]
+                agent.agentRealname= agentRealName[position]
+                agent.agentNegara= agentNegara[position]
+                agent.agentDeskripsi = deskripsi[position]
                 list.add(agent)
             }
             return list
