@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,6 +9,13 @@
     android:background="#333366"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333366"
+        android:orientation="vertical">
+
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="366dp"
@@ -17,6 +23,7 @@
         android:scaleX="1.2"
         android:scaleY="1.2"
         android:src="@drawable/logo" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,6 +37,8 @@
             android:layout_gravity="center_horizontal"
             android:elevation="40dp"
             android:src="@drawable/astra"/>
+
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -40,7 +49,16 @@
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             >
-
+            <ToggleButton
+                android:id="@+id/tombol_toggle"
+                android:layout_width="44dp"
+                android:layout_height="34dp"
+                android:background="@drawable/fav_toggle"
+                android:textOff=""
+                android:textOn=""
+                android:layout_gravity="right"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="226dp"
@@ -49,7 +67,7 @@
                 android:paddingTop="60dp">
 
                 <TextView
-                    android:id="@+id/tv_agentName"
+                    android:id="@+id/tv_agentName_detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Astra"
@@ -58,7 +76,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tv_agent_real_name"
+                    android:id="@+id/tv_agent_real_name_detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-5dp"
@@ -81,7 +99,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_agent_info"
+                        android:id="@+id/tv_agent_info_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="4dp"
@@ -90,11 +108,12 @@
                         android:textSize="14sp" />
 
                     <TextView
-                        android:id="@+id/tv_agent_roles"
+                        android:id="@+id/tv_agent_roles_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
                         android:textColor="#DDDBDB"
+                        android:text="Gura"
                         android:textSize="14sp" />
                 </LinearLayout>
 
@@ -114,7 +133,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_agent_gender_info"
+                        android:id="@+id/tv_agent_gender_info_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="4dp"
@@ -123,7 +142,7 @@
                         android:textSize="14sp" />
 
                     <TextView
-                        android:id="@+id/tv_agent_gender"
+                        android:id="@+id/tv_gender"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
@@ -137,13 +156,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <ScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_weight="1"
-                        android:padding="14dp">
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -161,7 +174,7 @@
                         </LinearLayout>
 
 
-                    </ScrollView>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -171,7 +184,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_deskripsi"
+        android:id="@+id/tv_deskripsi_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -179,7 +192,10 @@
         android:lineSpacingExtra="1dp"
         android:text="GAWR GURA"
         android:textColor="#DDDBDB"
-        android:textSize="13sp" />
+        android:textSize="16sp" />
 
 
-</LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
