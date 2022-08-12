@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AgentDetail"
+    tools:context=".Detail.AgentDetail"
     android:background="#333366"
     android:orientation="vertical">
 
@@ -49,7 +49,7 @@
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             >
-            <ToggleButton
+            <CheckBox
                 android:id="@+id/tombol_toggle"
                 android:layout_width="44dp"
                 android:layout_height="34dp"

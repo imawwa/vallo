@@ -1,4 +1,4 @@
-package com.dicoding.tugasakhirvalorant
+package com.dicoding.tugasakhirvalorant.Detail
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -9,8 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import kotlinx.android.synthetic.main.view.view.*
-import com.dicoding.tugasakhirvalorant.AgentData as AgentData1
+import com.dicoding.tugasakhirvalorant.R
+import com.dicoding.tugasakhirvalorant.setdatta.AgentData as AgentData1
 
 class AgentAdapter(val listAgent :ArrayList<AgentData1>) : RecyclerView.Adapter<AgentAdapter.ListViewHolder>() {
 
@@ -31,7 +31,7 @@ class AgentAdapter(val listAgent :ArrayList<AgentData1>) : RecyclerView.Adapter<
         holder.tvName.text = agent.agentName
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context,AgentDetail::class.java)
+            val intent = Intent(holder.itemView.context, AgentDetail::class.java)
             intent.putExtra(AgentDetail.INTENT_PARCEABLE, agent)
             holder.itemView.context.startActivity(intent)
         }

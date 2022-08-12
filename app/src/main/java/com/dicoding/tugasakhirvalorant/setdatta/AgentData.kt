@@ -1,4 +1,4 @@
-package com.dicoding.tugasakhirvalorant
+package com.dicoding.tugasakhirvalorant.setdatta
 
 import android.os.Parcel
 import android.os.Parcelable

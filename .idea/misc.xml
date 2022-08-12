@@ -5,10 +5,18 @@
       <map>
         <entry key="..\:/tugasvalorant/app/src/main/res/drawable/fav_toggle.xml" value="0.1555" />
         <entry key="..\:/tugasvalorant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/tugasvalorant/app/src/main/res/layout/about.xml" value="0.1743659420289855" />
+        <entry key="..\:/tugasvalorant/app/src/main/res/layout/activity_about.xml" value="0.1743659420289855" />
         <entry key="..\:/tugasvalorant/app/src/main/res/layout/activity_adapter.xml" value="0.17255434782608695" />
         <entry key="..\:/tugasvalorant/app/src/main/res/layout/activity_agent_detail.xml" value="0.16" />
+        <entry key="..\:/tugasvalorant/app/src/main/res/layout/activity_fav_agent.xml" value="0.1743659420289855" />
         <entry key="..\:/tugasvalorant/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/tugasvalorant/app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="..\:/tugasvalorant/app/src/main/res/layout/fav_detail.xml" value="0.1" />
+        <entry key="..\:/tugasvalorant/app/src/main/res/layout/favorite.xml" value="0.1743659420289855" />
         <entry key="..\:/tugasvalorant/app/src/main/res/layout/view.xml" value="0.16" />
+        <entry key="..\:/tugasvalorant/app/src/main/res/menu/about.xml" value="0.20416666666666666" />
+        <entry key="..\:/tugasvalorant/app/src/main/res/menu/favabout.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

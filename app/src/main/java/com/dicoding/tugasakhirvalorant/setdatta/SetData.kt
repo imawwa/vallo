@@ -1,5 +1,6 @@
-package com.dicoding.tugasakhirvalorant
+package com.dicoding.tugasakhirvalorant.setdatta
 
+import com.dicoding.tugasakhirvalorant.R
 
 
 object setData {

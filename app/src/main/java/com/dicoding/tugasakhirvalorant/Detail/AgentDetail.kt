@@ -1,17 +1,23 @@
-package com.dicoding.tugasakhirvalorant
+package com.dicoding.tugasakhirvalorant.Detail
 
-import android.app.Application
-import android.content.Intent
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
+import android.widget.ToggleButton
+import com.dicoding.tugasakhirvalorant.setdatta.AgentData
+import com.dicoding.tugasakhirvalorant.R
+import com.dicoding.tugasakhirvalorant.database.FavUser
+import com.dicoding.tugasakhirvalorant.database.UserDatabase
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class AgentDetail() : AppCompatActivity() {
 
-
+    val db by lazy { UserDatabase(this) }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +26,11 @@ class AgentDetail() : AppCompatActivity() {
         val actionbar = supportActionBar
         actionbar!!.title = "Agent Details"
         actionbar.setDisplayHomeAsUpEnabled(true)
+
+        setFavorite()
+
+
+
 
         val AgentIntent = intent.getParcelableExtra<AgentData>(INTENT_PARCEABLE) as AgentData
 
@@ -38,9 +49,14 @@ class AgentDetail() : AppCompatActivity() {
         tvGenderinfo.text= AgentIntent.agentGender
 
 
-
-
     }
+
+
+
+
+
+
+
     companion object{
         const val INTENT_PARCEABLE= "INTENT_PARCEABLE"
 
